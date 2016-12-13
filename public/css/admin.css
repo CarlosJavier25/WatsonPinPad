@@ -1,0 +1,67 @@
+@CHARSET "ISO-8859-1";
+
+
+table{
+	position: relative;
+	margin: 20px;
+	border: 1px solid white;
+}
+
+td, th{
+	padding-top: 10px;
+	passing-bottom: 10px;
+}
+
+#button-td{
+	text-align: center;
+}
+
+.view-email-button{
+	color: black;
+}
+
+#stats-table {
+    border-collapse: collapse;
+    top: 10px;
+    margin-bottom: 20vh;
+}
+
+#stats-table th, #stats-table td{
+	text-align: right;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	border: solid 1px white;
+}
+
+
+.loading-gif{
+	width: 20px;
+	height: 20px;
+}
+
+#email-list {
+    border-collapse: collapse;
+    top: 10px;
+}
+
+#email-list td, #email-list th{
+	text-align: right;
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+.email-list-row::after{
+	border-bottom: 1px solid white;
+	position: absolute;
+	height: 1px;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	width: 95%;	
+	content: ""
+}
+
+#title {
+    color: white;
+    text-align: center;
+}

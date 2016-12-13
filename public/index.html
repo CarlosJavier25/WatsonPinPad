@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Cognitive Assistant</title>
+<link rel = "shortcut icon" href = "images/favicon.ico"></link>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Makes app scale to be viewed on phone and prevents the user from zooming in on the app. -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no minimal-ui">
+<!-- IMPORTING BOOTSTRAP AND ITS DEPENDENCIES -->
+<!-- Jquery -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+<!-- IMPORTING MY STYLESHEET -->
+<link rel="stylesheet" href="css/shared.css">
+<link rel="stylesheet" href="css/index.css">
+<!-- IMPORTING MODULAR STYLES -->
+</head>
+<body>
+	<!-- Full width container for bootstrap responsiveness.-->
+	<div class="container-fluid fill overflow-hidden">
+		<div class="row vertical-fill">
+			<!-- Div that contains all the chat related elements. -->
+			<div id="left-div" class="col-md-2 hidden-sm hidden-xs vertical-fill">
+			</div>
+			<div id="middle-div" class="col-md-7 center-gradient vertical-fill no-padding">
+				<div id = "banner-div" class = "row">
+					<h4 id = "title" class = "small-margins">Cognitive Assistant</h4>	
+				</div>
+				<div id="chat-div">
+					<div class="chat-bar chat-bar_WATSON chat-bar_HIDDEN">
+						<div class="chat-bar-image"><img src = "images/watson_white.svg" height = "42" width = "42"></div>
+						<!-- There must be no space between these divs else the text box and the arrow will not be touching. -->
+						<div class="chat-bar-text watson-text"><p>ASDASASD</p><div class="chat-bar-pointer watson-pointer"></div></div>
+					</div>
+					<div class="chat-bar chat-bar_WATSONRATING chat-bar_HIDDEN">
+						<div class="chat-bar-image"><img src = "images/watson_white.svg" height = "42" width = "42"></div>
+						<!-- There must be no space between these divs else the text box and the arrow will not be touching. -->
+						<div class="chat-bar-text watson-text"><p>ASDASASD</p><div class="chat-bar-pointer watson-pointer"></div></div>
+						<img data-question-id = "" data-question-sentiment = "POSITIVE" width="20" height="20" src="images/thumbs_up.svg" class="rating-button ratings-image thumbs-up">
+						<img data-question-id = "" data-question-sentiment = "NEGATIVE" width="20" height="20" src="images/thumbs_down.svg" class="rating-button ratings-image thumbs-down">
+					</div>
+					<div class="chat-bar chat-bar_USER chat-bar_HIDDEN">
+						<div class="chat-bar-image"><img src = "images/user_icon.png" height = "42" width = "42"></div>
+						<!-- There must be no space between these divs else the text box and the arrow will not be touching. -->
+						<div class="chat-bar-text user-text"><p>ASDASASD</p><div class="chat-bar-pointer user-pointer"></div></div>
+					</div>
+					<div id = "chat-item-positioner"></div>
+						<!-- The div that is displayed while Watson thinks of a response shows the Watson loading gif. -->
+						<div id="loader">
+							<div class="loader--fallback"><img src="images/watson.gif" width="50" alt=""></div>
+						</div>
+				</div>
+				<div id="chat-input-div">
+					<input id="chat-input" class="fill" type="text"
+						placeholder="Say Something...">
+					<button id = "send-button" class = "btn absolute-vertical-center">Send</button>
+				</div>
+			</div>
+			<div id="right-div" class="col-md-3 hidden-sm hidden-xs vertical-fill">
+				<div id = "questions-div">
+					<h3>Common Questions</h3>
+					<button class = "common-question-button btn">Common Question 1</button>
+					<button class = "common-question-button btn">Common Question 2</button>
+					<button class = "common-question-button btn">Common Question 3</button>
+				<hr id = "splitter">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>
