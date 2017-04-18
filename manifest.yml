@@ -18,5 +18,5 @@ applications:
   - conversation-service
   - cloudant-db
   env:
-    workspaceID: ADD ME
+    workspaceID: 8e08406e-b5a5-4b4e-8234-f7604fdd30b5
    
