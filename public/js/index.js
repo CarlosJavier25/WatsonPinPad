@@ -249,16 +249,33 @@ $(document).ready(function() {
     });
 
     //Binds an event handler that submits the users message when they press the send button.
-    $("#send-button").click(function(event) {
-    	if(!($(this).val().trim() === "")){
+         $("#send-button").click(function(event) {
+    
+    	//if(!($(this).val().trim() != "")){
+        	//converse($("#chat-input").val());
         	converse($("#chat-input").val());
-        }
+        //}
         $("chat-input").val("");
     });
 
     converse("");
     scrollToInput();
 });
+
+//Binds an event handler that submits the users message when they press the generate button.
+         $("#generate-button").click(function(event) {
+         	
+         	openInNewTab('https://www.ibm.com/support/servicerequest/');
+         	
+         	
+    
+    	//if(!($(this).val().trim() != "")){
+        	//converse($("#chat-input").val());
+        	//converse($("#chat-input").val());
+        //}
+        //$("chat-input").val("");
+    });
+
 
 //FUNCTION DECLARATIONS
 
@@ -286,6 +303,15 @@ function rateQuestion(textElement) {
             console.log(errorThrown);
         });
 }
+
+
+// funcion abrir url
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
 
 //This function sends a post request to the server to save the users details in the database.
 function finishConversation() {
