@@ -15,7 +15,7 @@ applications:
   name: chatbotTemplate
   disk_quota: 1024M
   services:
-  - conversation-service
+  - Conversation-q5
   - cloudant-db
   env:
     workspaceID: 8e08406e-b5a5-4b4e-8234-f7604fdd30b5
