@@ -60,7 +60,16 @@
 	padding-left: 2vw;
 	position: absolute;
 }
+#generate-button{
+    background-color: rgba(59, 78, 221, 0.4);
+    color: #ffffff;
+    display: inline-block;
+    position: center;
+    
+    
 
+
+}
 #send-button{
     background-color: #b1c3cc;
     color: #ffffff;
@@ -278,5 +287,8 @@
 		height: 15%;	
 	}
 }
+
+
+
 
 
