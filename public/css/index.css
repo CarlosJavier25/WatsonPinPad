@@ -61,10 +61,16 @@
 	position: absolute;
 }
 #generate-button{
-    background-color: rgba(59, 78, 221, 0.4);
+    background-color: rgba(59, 78, 221, 0.4); !important;
     color: #ffffff;
     display: inline-block;
     position: center;
+    height: 20%;
+    white-space: normal;
+    width: 90% !important;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    
     
     
 
@@ -287,6 +293,11 @@
 		height: 15%;	
 	}
 }
+
+
+
+
+
 
 
 
