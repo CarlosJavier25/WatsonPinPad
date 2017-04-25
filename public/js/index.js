@@ -265,7 +265,7 @@ $(document).ready(function() {
         	//converse($("#chat-input").val());
         	converse($("#chat-input2").val());
         //}
-        $("chat-input").val("");
+        $("chat-input2").val("");
     });
 
     
