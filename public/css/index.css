@@ -142,6 +142,22 @@
 }
 
 
+
+
+#llamar-button{
+    background-color: rgba(3, 47, 86, 0.7); !important;
+    color: #ffffff;
+    display: inline-block;
+    position: center;
+    height: 20%;
+    white-space: normal;
+    width: 90% !important;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    
+}
+
+
 .user-text{
 	float: right;
 	background-color: rgba(255, 255, 255, 0.4);
@@ -308,7 +324,17 @@
 
 
 
+#phone-div{
+    
+     
+   
+    text-align:center;
+}
 
+#phone-div > img{
+    vertical-align:middle;
+    
+}
 
 
 
