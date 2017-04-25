@@ -258,6 +258,19 @@ $(document).ready(function() {
         $("chat-input").val("");
     });
 
+    
+     $("#send-button2").click(function(event) {
+    
+    	//if(!($(this).val().trim() != "")){
+        	//converse($("#chat-input").val());
+        	converse($("#chat-input").val());
+        //}
+        $("chat-input").val("");
+    });
+
+    
+    
+    
     converse("");
     scrollToInput();
 });
@@ -383,3 +396,52 @@ function submitMessage(text) {
     talk("USER", text, false, false);
     scrollChatToBottom();
 };
+
+
+function get_current_page() 
+        {
+        var pathArray = window.location.pathname.split( '/' );
+          var current_page = pathArray[pathArray.length-1];
+          current_page_array = current_page.split(".");
+          current_page = current_page_array[0];
+
+
+
+          if (current_page =='students' || current_page=='my-profile' ||  current_page=='faqs' || current_page == 'forecast-career'){
+            document.getElementById("joinuslist").className += " active";
+            document.getElementById("joinus").className += " in";
+
+            if (current_page == 'students') {
+              document.getElementById("students").className += " active";
+            }
+            else if (current_page == 'faqs') {
+              document.getElementById("faqs").className += " active";
+            }
+            else if (current_page == 'forecast-career') {
+              document.getElementById("forecast-career").className += " active";
+            }
+            else if (current_page == 'my-profile') {
+              document.getElementById("my-profile").className += " active";
+            }
+            else{
+            }
+          }
+          else if(current_page == 'values' || current_page == 'ambassadors' || current_page == 'documentary'){
+
+
+              if(current_page== 'values'){ 
+                document.getElementById("values").className += " active"; 
+              }
+              else if (current_page== 'ambassadors') { 
+                document.getElementById("ambassadors").className += " active"; 
+              } 
+                else if (current_page== 'documentary') { 
+                document.getElementById("documentary").className += " active"; 
+              }
+              else{
+
+              }
+
+            }
+
+        }
