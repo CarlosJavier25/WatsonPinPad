@@ -42,6 +42,16 @@ html, body { height:100%; margin:0; padding:0; color: white; }
 	bottom: 0;
 	margin: auto;
 }
+
+
+.absolute-vertical-right{
+	
+		bottom: 0;
+	
+}
+
+
+
 /*Override bootstrap styles.*/
 .small-margins{
 	margin-top: 5px !important;
@@ -67,6 +77,14 @@ html{
     background: -moz-linear-gradient(#30374B, #285469); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#30374B, #285469); /* Standard syntax */
 }
+
+
+#right-div{
+	background:rgba(0, 0, 0, 1);
+          
+}
+
+
 
 #middle-div{
 	overflow: hidden;
