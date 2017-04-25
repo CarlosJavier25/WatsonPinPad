@@ -33,31 +33,88 @@
 <!-- IMPORTING MODULAR STYLES -->
 </head>
 <body>
+    
+    
+    
+    
+    
 	<!-- Full width container for bootstrap responsiveness.-->
 	<div class="container-fluid fill overflow-hidden">
 		<div class="row vertical-fill">
 			<!-- Div that contains all the chat related elements. -->
-			<div id="left-div" class="col-md-2 col-sm-2 col-xs-2 vertical-fill">
+            
+            
+            
+			<div id="left-div" class="col-md-2 col-xs-4 vertical-fill">
 				<div id = "op-div">
+                    
+                    
+                    <br>
+                    
+                    
+                    <img src="../public/images/logo.png" class="img-responsive"> 
+                    
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
 					<h4>Opciones</h4>
-					<button id = "generate-button" class = "btn vertical-center" class="img-responsive" alt="Imagen responsive">Generar Ticket</button>
+                    <hr>
+                    
+                    
+					<button id = "generate-button" class = "btn vertical-center">Generar Ticket</button>
+                    <br><br><br><br>
+                    
+                    <div id = "questions-div2" class="visible-xs">
+                    
+					<h5>Preguntas Comunes</h5>
+                    <hr>
+                        
+                               
+                                
+                                
+                        
+					       
+                      
+                        
+                        <button class = "common-question-button btn">Pin Pad</button>
+					   <button class = "common-question-button btn">Rollos de Papel</button>
+                            
 					
+				    
+				    </div>
 					<!-- <button class = "op1-1-button btn">Generar ticket</button>-->
 					
-				<hr id = "splitter">
-					
-				<div class="loader--fallback"><img src="images/logo.png" class="img-responsive" alt="Imagen responsive"></div>
-                    
+				
                     
                     
 				</div>
+                
+                
+                
+                
 
 			</div>
-			<div id="middle-div" class="col-md-7 col-sm-7 col-xs-7 center-gradient vertical-fill no-padding">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+			<div id="middle-div" class="col-md-7  col-xs-8 center-gradient vertical-fill no-padding">
 				<div id = "banner-div" class = "row">
+                     <br>
+                    
 					<h4 id = "title" class = "small-margins">Pin Pad Watson Support</h4>	
 				</div>
 				<div id="chat-div">
+                    <br>
+                    <br>
 					<div class="chat-bar chat-bar_WATSON chat-bar_HIDDEN">
 						<div class="chat-bar-image"><img src = "images/watson_white.svg" height = "42" width = "42"></div>
 						<!-- There must be no space between these divs else the text box and the arrow will not be touching. -->
@@ -81,23 +138,56 @@
 							<div class="loader--fallback"><img src="images/watson.gif" width="50" alt=""></div>
 						</div>
 				</div>
+                
 				<div id="chat-input-div">
 					<input id="chat-input" class="fill" type="text"
 						placeholder="Say Something...">
-					<button id = "send-button" class = "btn absolute-vertical-center">Send</button>
+                  
+					
 				</div>
+                
+                <div id="botonSend">
+                      <button id = "send-button" class = "btn absolute-vertical-right">Send</button>
+                    
+                    
+                </div>
+                
+                
 			</div>
-			<div id="right-div" class="col-md-3 col-sm-3 col-xs-3 vertical-fill">
-				<div id = "questions-div">
-					<h2>Common Questions</h2>
+            
+            
+            
+            
+       <div id="right-div" class="vertical-fill">
+           <br>
+           
+            <img src="../public/images/W1.gif">
+           
+          
+           
+            
+           
+				<div id = "questions-div" class="col-md-3 col-xs-1">
+                    
+					<h2>Preguntas Comunes</h2>
 					<button class = "common-question-button btn">Pin Pad</button>
 					<button class = "common-question-button btn">Rollos de Papel</button>
 					
 				<hr id = "splitter">
 				</div>
 			</div>
+            
+            
 		</div>
 	</div>
 	<script src="js/index.js"></script>
 </body>
+
+
+
+
+
+
+
+
 </html>
