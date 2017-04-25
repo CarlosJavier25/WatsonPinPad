@@ -82,6 +82,27 @@
     
 }
 
+
+#chat-input2{
+	border: 0%;
+	color: darkslategray;
+	padding-left: 2vw;
+	background-color: rgba(255, 255, 255, 0.0);
+    border-color: rgba(255, 255, 255, 0.0);
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding-left: 2vw;
+	position: absolute;
+    
+    
+    
+}
+
+
+
+
+
 #send-button{
     background-color: #449EB1;
     color: #ffffff;
