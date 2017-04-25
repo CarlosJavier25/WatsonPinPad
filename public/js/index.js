@@ -263,7 +263,7 @@ $(document).ready(function() {
     
     	//if(!($(this).val().trim() != "")){
         	//converse($("#chat-input").val());
-        	converse($("#chat-input").val());
+        	converse($("#chat-input2").val());
         //}
         $("chat-input").val("");
     });
