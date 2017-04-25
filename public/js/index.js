@@ -64,6 +64,7 @@ var converse = (function() {
             })
             .done(function onSuccess(returnedJson) {
                 chatInput.val(""); // clear the text input
+                chatInput2.val("");
                 // Updating conversation API response variables.
                 context = returnedJson.context;
                 var texts = returnedJson.output.text;
@@ -247,9 +248,22 @@ $(document).ready(function() {
         }
         $("chat-input").val("");
     });
+    
+    $("#chat-input2").keyup(function(event) {
+        if (event.keyCode === 13) {
+            //Passing the text the user typed in to the converstation function.
+            if(!($(this).val().trim() === "")){
+            	 converse($(this).val());
+            }
+        }
+        $("chat-input2").val("");
+    });
+
+    
 
     //Binds an event handler that submits the users message when they press the send button.
          $("#send-button").click(function(event) {
+             
     
     	//if(!($(this).val().trim() != "")){
         	//converse($("#chat-input").val());
@@ -277,6 +291,20 @@ $(document).ready(function() {
 
 //Binds an event handler that submits the users message when they press the generate button.
          $("#generate-button").click(function(event) {
+         	
+         	openInNewTab('https://www.ibm.com/support/servicerequest/');
+         	
+         	
+    
+    	//if(!($(this).val().trim() != "")){
+        	//converse($("#chat-input").val());
+        	//converse($("#chat-input").val());
+        //}
+        //$("chat-input").val("");
+    });
+
+
+$("#llamar-button").click(function(event) {
          	
          	openInNewTab('https://www.ibm.com/support/servicerequest/');
          	
