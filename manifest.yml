@@ -18,5 +18,5 @@ applications:
   - Conversation-q5
   - cloudant-db
   env:
-    workspaceID: 8e08406e-b5a5-4b4e-8234-f7604fdd30b5
+    workspaceID: 03073a42-bf0a-4063-a8c4-1d212ea95461
    
