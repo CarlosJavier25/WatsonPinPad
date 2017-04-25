@@ -35,33 +35,40 @@
 
 
 #chat-div{
-	height:87%;
+	height:100%;
 	overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
+    
 }
 
 #chat-input-div{
 	height: 6%;
-	background-color: rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.6);
 	position: absolute;
-	width: 100%;
+	width: 75%;
 	bottom: 0px;
+    border-radius: 10px;
+    margin-left: 1%;
 }
 
 #chat-input{
 	border: 0px;
-	color: white;
+	color: darkslategray;
 	padding-left: 2vw;
 	background-color: rgba(255, 255, 255, 0.0);
-	width: 80%;
+	width: 100%;
 	bottom: 0;
 	left: 0;
 	padding-left: 2vw;
 	position: absolute;
+    
+    
+    
 }
 #generate-button{
-    background-color: rgba(59, 78, 221, 0.4); !important;
+    background-color: rgba(3, 47, 86, 0.7); !important;
     color: #ffffff;
     display: inline-block;
     position: center;
@@ -77,19 +84,22 @@
 
 }
 #send-button{
-    background-color: #b1c3cc;
+    background-color: #449EB1;
     color: #ffffff;
     display: inline-block;
     position: absolute;
-    width: 17%;
+    width: 22%;
     right: .5vw;
-    height: 40px;
+    height: 6%;
+    border-radius: 10px;
+    bottom:0px;
 }
 
 .user-text{
 	float: right;
 	background-color: rgba(255, 255, 255, 0.4);
 	margin-right: 70px;
+    
 }
 
 .watson-text{
@@ -223,7 +233,7 @@
 }
 
 #questions-div{
-	top: 50%;
+	top: 30%;
 	color: #ACACAC;
 	position: relative;
 	height: 45%;
@@ -238,6 +248,36 @@
     border-radius: 10px;
     color: #FFFFFF;
 }
+
+#questions-div2 > button{
+	background-color: rgba(3, 47, 86, 0.3); !important;
+    height: 20%;
+    white-space: normal;
+    width: 90% !important;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+#right-div{
+    
+     
+    margin:0px auto;
+    text-align:center;
+}
+
+#right-div > img{
+    vertical-align:middle;
+    
+}
+
+
 
 /*DROP DOWN RULES */
 
@@ -293,9 +333,6 @@
 		height: 15%;	
 	}
 }
-
-
-
 
 
 
