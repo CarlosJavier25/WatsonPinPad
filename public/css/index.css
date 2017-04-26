@@ -57,11 +57,11 @@
 #chat-input-div2{
 	height: 6%;
 	background-color: rgba(255, 255, 255, 0.6);
-    border-color: rgba(255, 255, 255, 0.6);
+    	border-color: rgba(255, 255, 255, 0.6);
 	position: absolute;
-	width: 77%;
+	width: 100%;
 	bottom: 0px;
-    border-radius: 10px;
+    	border-radius: 10px;
   
 }
 
@@ -71,7 +71,7 @@
 	color: darkslategray;
 	padding-left: 2vw;
 	background-color: rgba(255, 255, 255, 0.0);
-    border-color: rgba(255, 255, 255, 0.0);
+    	border-color: rgba(255, 255, 255, 0.0);
 	width: 100%;
 	bottom: 0;
 	left: 0;
