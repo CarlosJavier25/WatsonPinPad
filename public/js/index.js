@@ -249,6 +249,22 @@ $(document).ready(function() {
         }
         $("chat-input").val("");
     });
+	
+	$("#chat-input2").keyup(function(event) {
+        if (event.keyCode === 13) {
+            //Passing the text the user typed in to the converstation function.
+            if(!($(this).val().trim() === "")){
+            	 converse($(this).val());
+            }
+        }
+        $("chat-input2").val("");
+    });
+	
+	
+	
+	
+	
+	
 
     //Binds an event handler that submits the users message when they press the send button.
          $("#send-button").click(function(event) {
