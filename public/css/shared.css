@@ -12,6 +12,22 @@ html, body { height:100%; margin:0; padding:0; color: white; }
     background: linear-gradient(#353D53, #2D5D75); /* Standard syntax */
 }
 
+
+.derecha{
+    
+margin-right: 0px;   
+}
+
+
+.colorazul2{
+    color: rgba(178, 164, 204, 1);
+}
+
+
+
+.colorAmarillo{
+    color: rgba(247,253,0,.87);
+}
 .hidden{
 	display: none;
 }
@@ -25,6 +41,9 @@ html, body { height:100%; margin:0; padding:0; color: white; }
 .vertical-fill{
 	height:100%;
 }
+
+
+
 
 .no-padding {
    padding: 0 !important;
