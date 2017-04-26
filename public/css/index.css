@@ -57,11 +57,11 @@
 #chat-input-div2{
 	height: 6%;
 	background-color: rgba(255, 255, 255, 0.6);
-    	border-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.6);
 	position: absolute;
 	width: 100%;
 	bottom: 0px;
-    	border-radius: 10px;
+    border-radius: 10px;
   
 }
 
@@ -71,7 +71,7 @@
 	color: darkslategray;
 	padding-left: 2vw;
 	background-color: rgba(255, 255, 255, 0.0);
-    	border-color: rgba(255, 255, 255, 0.0);
+    border-color: rgba(255, 255, 255, 0.0);
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -129,8 +129,8 @@
 }
 
 #generate-button{
-    background-color: rgba(3, 47, 86, 0.7); !important;
-    color: #ffffff;
+    background-color: rgba(75, 138, 28, 0.6); !important;
+    color: rgba(178, 164, 204, 1);
     display: inline-block;
     position: center;
     height: 20%;
@@ -313,13 +313,14 @@
 }
 
 #questions-div2 > button{
-	background-color: rgba(3, 47, 86, 0.3); !important;
+	background-color: rgba(42, 6, 132, 0.9); !important;
+    color: rgba(178, 164, 204, 1);
     height: 20%;
     white-space: normal;
     width: 90% !important;
     margin: 10px 10px 10px 0px;
     border-radius: 10px;
-    color: #FFFFFF;
+    
 }
 
 
@@ -335,6 +336,7 @@
     vertical-align:middle;
     
 }
+
 
 
 
