@@ -36,6 +36,7 @@ const MAXIMUM_PHONE_WIDTH = 720;
 var converse = (function() {
     var context;
     var chatInput = $("#chat-input");
+    var chatInput2 = $("#chat-input2");
     var loader = $("#loader");
     return function(userText) {
         loader.show();
@@ -63,7 +64,8 @@ var converse = (function() {
                 contentType: "application/json"
             })
             .done(function onSuccess(returnedJson) {
-                chatInput.val(""); // clear the text input
+                chatInput.val("");
+		chatInput2.val("");// clear the text input
                 // Updating conversation API response variables.
                 context = returnedJson.context;
                 var texts = returnedJson.output.text;
