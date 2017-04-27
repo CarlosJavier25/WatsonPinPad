@@ -10,7 +10,7 @@ declared-services:
 applications:
 - path: .
   memory: 256M
-  instances: 0
+  instances: 1
   domain: mybluemix.net
   name: chatbotTemplate
   disk_quota: 1024M
